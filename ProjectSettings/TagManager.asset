@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
+  - Ship
+  - ShipCamera
+  - Water
   layers:
   - Default
   - TransparentFX
@@ -13,30 +17,30 @@ TagManager:
   - UI
   - 
   - 
+  - PostProcessing
+  - Ragdoll
+  - DynamicObject
+  - CameraCollide
+  - World
+  - Wheel
+  - Building
+  - Vehicle
+  - Minimap
+  - Road
+  - OnlyRagdoll
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Audio
+  - WaterCollide
+  - Tunnel
+  - Weather
+  - Terrain
+  - MeshDisplacement
+  - Player1
+  - Player2
+  - Player3
+  - Player4
+  - Visible
+  - Invisible
   m_SortingLayers:
   - name: Default
     uniqueID: 0
