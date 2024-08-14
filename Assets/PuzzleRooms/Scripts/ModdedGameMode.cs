@@ -58,7 +58,7 @@ public class ModdedGameMode : ModFreemodeGamemode
 
         var partManager = PartManager.GetPartManagerOfFloor(floor0);
 
-        if (partManager == null) throw new System.Exception("Could not find part manager in floor with index 0");
+        if (partManager == null) throw new System.Exception("Could not find part manager in floor with index ");
 
         playerProgress_Keys.Add(playerCharacter.GetPlayerController());
         playerProgress_Values.Add(partManager);
