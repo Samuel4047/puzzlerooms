@@ -9,6 +9,7 @@ public class ModdedGameMode : ModFreemodeGamemode
 {
     public static ModdedGameMode Instance;
 
+    public SceneLoader sceneLoader;
     public SceneField[] floors;
 
     [HideInInspector]
@@ -26,30 +27,28 @@ public class ModdedGameMode : ModFreemodeGamemode
 
         foreach (var scene in floors)
         {
-            SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+            sceneLoader.LoadScene(scene, true);
         }
     }
 
     protected override void OnSpawnedPlayerCharacter(ModPlayerController playerController, ModPlayerCharacter playerCharacter)
     {
-        base.OnSpawnedPlayerCharacter(playerController, playerCharacter);
-
         if (!playerProgress_Keys.Contains(playerCharacter.GetPlayerController()))
         {
             StartCoroutine(SetPlayerProgressStart(playerCharacter));
         }
-        else
+        /*else
         {
             var partManager = playerProgress_Values[playerProgress_Keys.IndexOf(playerCharacter.GetPlayerController())];
             partManager.TeleportPlayerToThisFloor(playerCharacter);
-        }
+        }*/
     }
 
     private IEnumerator SetPlayerProgressStart(ModPlayerCharacter playerCharacter)
     {
         var floor0 = SceneManager.GetSceneByName(floors[0]);
 
-        for(int i = 0; i < 60; i++)
+        for (int i = 0; i < 60; i++)
         {
             if (floor0.GetRootGameObjects().Length == 0)
                 yield return null;
@@ -69,7 +68,7 @@ public class ModdedGameMode : ModFreemodeGamemode
 
     public override ModPlayerCharacterSpawnPoint GetPlayerSpawnPoint(ModPlayerController playerController)
     {
-        if(playerProgress_Keys.Count != 0)
+        if(playerProgress_Values.Count != 0)
             return playerProgress_Values[playerProgress_Keys.IndexOf(playerController)].startPosition;
         else
             return base.GetPlayerSpawnPoint(playerController);
