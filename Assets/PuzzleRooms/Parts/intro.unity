@@ -17387,18 +17387,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3419961993528546434, guid: 97aa2f0dbd6899240877cd26c9c94e91, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3419961993528546434, guid: 97aa2f0dbd6899240877cd26c9c94e91, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.0330348
-      objectReference: {fileID: 0}
-    - target: {fileID: 3576895371551773372, guid: 97aa2f0dbd6899240877cd26c9c94e91, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7187515882119124532, guid: 97aa2f0dbd6899240877cd26c9c94e91, type: 3}
       propertyPath: m_Name
       value: ModStandButton
@@ -19912,7 +19900,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-14718
+  m_Name: pb_Mesh59306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19923,8 +19911,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 5
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 9.5, y: 7.5, z: -0.5}
+      m_Extent: {x: 10, y: 0, z: 10}
   m_Shapes:
     vertices: []
     shapes: []
@@ -19941,7 +19929,7 @@ Mesh:
   m_KeepVertices: 1
   m_KeepIndices: 1
   m_IndexFormat: 0
-  m_IndexBuffer: 000003000400000001000300010002000300
+  m_IndexBuffer: 000001000200000003000100030004000100
   m_VertexData:
     serializedVersion: 3
     m_VertexCount: 5
@@ -20003,7 +19991,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 240
-    _typelessdata: 000000bf0000f0400000184100000000000080bf00000000000080bf0000000000000000000080bf0000b4410000b441000000bf0000f040000028c100000000000080bf00000000000080bf0000000000000000000080bf0000b441000020c000009c410000f040000028c100000000000080bf00000000000080bf0000000000000000000080bf000020c0000020c000009c410000f0400000b04000000000000080bf00000000000080bf0000000000000000000080bf000020c000008c4100009c410000f0400000184100000000000080bf00000000000080bf0000000000000000000080bf000020c00000b441
+    _typelessdata: 000000bf0000f0400000184100000000000080bf00000000000080bf0000000000000000000080bfe55b7041ffbf7d4100009c410000f0400000b04000000000000080bf00000000000080bf0000000000000000000080bf946f5340ff3f584100009c410000f0400000184100000000000080bf00000000000080bf0000000000000000000080bf946f5340ffbf7d41000000bf0000f040000028c100000000000080bf00000000000080bf0000000000000000000080bfe55b7041fe7f844000009c410000f040000028c100000000000080bf00000000000080bf0000000000000000000080bf946f5340fe7f8440
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -20240,7 +20228,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-14728
+  m_Name: pb_Mesh59228
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20463,11 +20451,11 @@ MonoBehaviour:
   - {x: 19.5, y: 7.5, z: 5.5}
   - {x: 19.5, y: 7.5, z: 9.5}
   m_Textures0:
-  - {x: 22.5, y: 22.5}
-  - {x: 22.5, y: -2.5}
-  - {x: -2.5, y: -2.5}
-  - {x: -2.5, y: 17.5}
-  - {x: -2.5, y: 22.5}
+  - {x: 15.022435, y: 15.859374}
+  - {x: 15.022435, y: 4.140624}
+  - {x: 3.3036852, y: 4.140624}
+  - {x: 3.3036852, y: 13.515624}
+  - {x: 3.3036852, y: 15.859374}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
