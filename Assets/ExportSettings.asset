@@ -16,19 +16,11 @@ MonoBehaviour:
   exportProfiles:
   - referencePaths: []
     modName: PuzzleRooms
-<<<<<<< HEAD
     modAuthor: 
     modVersion: 1.0.0
     modDescription: 
     modAssetPath: Assets/PuzzleRooms
     modExportPath: Assets/../
-=======
-    modAuthor: Default
-    modVersion: 1.0.0
-    modDescription: 
-    modAssetPath: C:/Users/zocker/Desktop/uNITY STUFF/file.404/puzzlerooms/Assets/PuzzleRooms
-    modExportPath: C:/Users/zocker/Desktop/uNITY STUFF/Mod builds
->>>>>>> d28de7a299fc00c64f149f3669e5edb490a4bff7
     modIcon: {fileID: 0}
   logLevel: 3
   optimizeMode: 0
