@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: ExportSettings
   m_EditorClassIdentifier: 
   activeProfile: 0
-  exportProfiles: []
+  exportProfiles:
+  - referencePaths: []
+    modName: PuzzleRooms
+    modAuthor: Default
+    modVersion: 1.0.0
+    modDescription: 
+    modAssetPath: C:/Users/zocker/Desktop/uNITY STUFF/file.404/puzzlerooms/Assets/PuzzleRooms
+    modExportPath: C:/Users/zocker/Desktop/uNITY STUFF/Mod builds
+    modIcon: {fileID: 0}
   logLevel: 3
   optimizeMode: 0
   compressionLevel: 2
