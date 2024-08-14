@@ -15,7 +15,6 @@ public class PartManager : MonoBehaviour
     public SceneField nextFloor;
     public SceneField previousFloor;
 
-    // TODO: fix bug
     public void TeleportPlayerToNextFloor(ModPlayerCharacter character)
     {
         if(nextFloor != null || nextFloor != "")
