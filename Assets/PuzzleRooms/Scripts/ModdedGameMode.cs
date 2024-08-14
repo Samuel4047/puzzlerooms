@@ -25,10 +25,13 @@ public class ModdedGameMode : ModFreemodeGamemode
 
         Instance = this;
 
+
         foreach (var scene in floors)
         {
             sceneLoader.LoadScene(scene, true);
         }
+
+        SceneManager.LoadScene("_Lighting", LoadSceneMode.Additive);
     }
 
     protected override void OnSpawnedPlayerCharacter(ModPlayerController playerController, ModPlayerCharacter playerCharacter)
@@ -37,11 +40,6 @@ public class ModdedGameMode : ModFreemodeGamemode
         {
             StartCoroutine(SetPlayerProgressStart(playerCharacter));
         }
-        /*else
-        {
-            var partManager = playerProgress_Values[playerProgress_Keys.IndexOf(playerCharacter.GetPlayerController())];
-            partManager.TeleportPlayerToThisFloor(playerCharacter);
-        }*/
     }
 
     private IEnumerator SetPlayerProgressStart(ModPlayerCharacter playerCharacter)
@@ -58,7 +56,7 @@ public class ModdedGameMode : ModFreemodeGamemode
 
         var partManager = PartManager.GetPartManagerOfFloor(floor0);
 
-        if (partManager == null) throw new System.Exception("Could not find part manager in floor with index ");
+        if (partManager == null) throw new System.Exception("Could not find part manager in floor with index 0");
 
         playerProgress_Keys.Add(playerCharacter.GetPlayerController());
         playerProgress_Values.Add(partManager);

@@ -8,6 +8,7 @@ public class SceneLoader : ModScriptBehaviour
 {
     public void LoadScene(string nameOrPath, bool additive)
     {
-        ModScenes.Load(nameOrPath, additive);
+        var mode = additive ? LoadSceneMode.Additive : LoadSceneMode.Single;
+        SceneManager.LoadScene(nameOrPath, mode);
     }
 }
