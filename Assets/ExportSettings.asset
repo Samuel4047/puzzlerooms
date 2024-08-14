@@ -15,12 +15,12 @@ MonoBehaviour:
   activeProfile: 0
   exportProfiles:
   - referencePaths: []
-    modName: PuzzleRooms
-    modAuthor: 
+    modName: puzzleroooms
+    modAuthor: asrfg
     modVersion: 1.0.0
-    modDescription: 
-    modAssetPath: Assets/PuzzleRooms
-    modExportPath: Assets/../
+    modDescription: fg
+    modAssetPath: C:/Users/zocker/Desktop/uNITY STUFF/file.404/puzzlerooms/Assets/PuzzleRooms
+    modExportPath: C:/Users/zocker/Desktop/uNITY STUFF/Mod builds
     modIcon: {fileID: 0}
   logLevel: 3
   optimizeMode: 0
