@@ -225,13 +225,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 693830314}
+  - component: {fileID: 693830315}
   m_Layer: 0
   m_Name: == SETUP ==
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &693830314
 Transform:
   m_ObjectHideFlags: 0
@@ -250,6 +251,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693830315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693830313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "}\xEB\x8B\x96\x14\xEF\xDA\x01"
+      identifier: 7deb8b9614efda01
+  objectIdentifier:
+    friendlyIdentifier: "\xD3m\xFE~"
+    identifier: d36dfe7e00000000
 --- !u!1 &817287341
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,8 +281,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817287343}
-  - component: {fileID: 817287342}
+  - component: {fileID: 817287346}
+  - component: {fileID: 817287345}
   - component: {fileID: 817287344}
+  - component: {fileID: 817287342}
   m_Layer: 0
   m_Name: Gamemode
   m_TagString: Untagged
@@ -277,22 +301,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 817287341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab203dbc617e17642b5d8f589d9d772d, type: 3}
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modPlayerControllerPrefab: {fileID: 0}
-  modPlayerCharacterPrefab: {fileID: 0}
-  defaultSpawnPoint: {fileID: 1409318877}
-  sceneLoader: {fileID: 817287344}
-  floors:
-  - m_SceneAsset: {fileID: 102900000, guid: 7bda48e8eaaa843449f4bcb283a52032, type: 3}
-    m_SceneName: intro
-  - m_SceneAsset: {fileID: 102900000, guid: c5bef4f868dbfaa43b46169df612e5bf, type: 3}
-    m_SceneName: Part1
-  - m_SceneAsset: {fileID: 102900000, guid: a7f6275b051619046aa2eadea422bafc, type: 3}
-    m_SceneName: Part2
-  playerProgress_Keys: []
-  playerProgress_Values: []
+  typeReference:
+    assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    scriptName: SceneLoader
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 817287342}
+    reference:
+      assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      scriptName: SceneLoader
+      isMonobehaviour: 1
+    instanceMembers: []
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
 --- !u!4 &817287343
 Transform:
   m_ObjectHideFlags: 0
@@ -317,9 +342,194 @@ MonoBehaviour:
   m_GameObject: {fileID: 817287341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2286dfcba7b37e7428bb496c62f6f3b8, type: 3}
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "}\xEB\x8B\x96\x14\xEF\xDA\x01"
+      identifier: 7deb8b9614efda01
+  objectIdentifier:
+    friendlyIdentifier: "\xE7{\xAFw"
+    identifier: e77baf7700000000
+--- !u!114 &817287345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817287341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1354039292, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links:
+  - linkID: 4892
+    link: {fileID: 817287346}
+    component: {fileID: 0}
+  - linkID: 19008
+    link: {fileID: 817287342}
+    component: {fileID: 0}
+--- !u!114 &817287346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817287341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeReference:
+    assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    scriptName: ModdedGameMode
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 817287346}
+    reference:
+      assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      scriptName: ModdedGameMode
+      isMonobehaviour: 1
+    instanceMembers:
+    - memberName: sceneLoader
+      memberLink:
+        id: 0
+    - memberName: floors
+      memberLink:
+        id: 1
+    - memberName: playerProgress_Keys
+      memberLink:
+        id: 2
+    - memberName: playerProgress_Values
+      memberLink:
+        id: 3
+    - memberName: defaultSpawnPoint
+      memberLink:
+        id: 4
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
+    00000000:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        linkType: 4
+        value: {fileID: 817287341}
+        behaviourID: 19008
+    00000001:
+      type: {class: LinkArrayV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        arrayLength: 3
+        elementLinks:
+        - id: 5
+        - id: 6
+        - id: 7
+    00000002:
+      type: {class: LinkArrayV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        arrayLength: 0
+        elementLinks: []
+    00000003:
+      type: {class: LinkArrayV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        arrayLength: 0
+        elementLinks: []
+    00000004:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        linkType: 4
+        value: {fileID: 1409318876}
+        behaviourID: 18644
+    00000005:
+      type: {class: LinkInstanceV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        reference:
+          assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          scriptName: SceneField
+          isMonobehaviour: 0
+        instanceMembers:
+        - memberName: m_SceneAsset
+          memberLink:
+            id: 8
+        - memberName: m_SceneName
+          memberLink:
+            id: 9
+    00000006:
+      type: {class: LinkInstanceV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        reference:
+          assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          scriptName: SceneField
+          isMonobehaviour: 0
+        instanceMembers:
+        - memberName: m_SceneAsset
+          memberLink:
+            id: 10
+        - memberName: m_SceneName
+          memberLink:
+            id: 11
+    00000007:
+      type: {class: LinkInstanceV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        reference:
+          assemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          scriptName: SceneField
+          isMonobehaviour: 0
+        instanceMembers:
+        - memberName: m_SceneAsset
+          memberLink:
+            id: 12
+        - memberName: m_SceneName
+          memberLink:
+            id: 13
+    00000008:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        linkType: 1
+        value: {fileID: 102900000, guid: 7bda48e8eaaa843449f4bcb283a52032, type: 3}
+        behaviourID: -1
+    00000009:
+      type: {class: TypeHandler_PrimitiveStringV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        value: intro
+    0000000A:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        linkType: 1
+        value: {fileID: 102900000, guid: c5bef4f868dbfaa43b46169df612e5bf, type: 3}
+        behaviourID: -1
+    0000000B:
+      type: {class: TypeHandler_PrimitiveStringV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        value: Part1
+    0000000C:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        linkType: 1
+        value: {fileID: 102900000, guid: a7f6275b051619046aa2eadea422bafc, type: 3}
+        behaviourID: -1
+    0000000D:
+      type: {class: TypeHandler_PrimitiveStringV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 817287346}
+        value: Part2
 --- !u!1 &822123602
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,13 +632,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046747530}
+  - component: {fileID: 1046747531}
   m_Layer: 0
   m_Name: == MAP ==
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1046747530
 Transform:
   m_ObjectHideFlags: 0
@@ -444,6 +655,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046747531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046747529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "}\xEB\x8B\x96\x14\xEF\xDA\x01"
+      identifier: 7deb8b9614efda01
+  objectIdentifier:
+    friendlyIdentifier: "\xFF\xFFuw"
+    identifier: ffff757700000000
 --- !u!1 &1282508453
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +781,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1409318878}
+  - component: {fileID: 1409318880}
+  - component: {fileID: 1409318879}
   - component: {fileID: 1409318877}
   m_Layer: 0
   m_Name: Spawnpoint
@@ -566,11 +800,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1409318876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1307137437, guid: 7e2bf859fdd8d704c9ff230cc7b353ee, type: 3}
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overrideTransform: {fileID: 0}
-  bRagdoll: 0
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "}\xEB\x8B\x96\x14\xEF\xDA\x01"
+      identifier: 7deb8b9614efda01
+  objectIdentifier:
+    friendlyIdentifier: "\x7F\xB6\xE1w"
+    identifier: 7fb6e17700000000
 --- !u!4 &1409318878
 Transform:
   m_ObjectHideFlags: 0
@@ -584,6 +825,115 @@ Transform:
   m_Children: []
   m_Father: {fileID: 817287343}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1409318879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409318876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeReference:
+    assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    scriptName: ModWobblyLife.ModPlayerCharacterSpawnPoint
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 1409318879}
+    reference:
+      assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      scriptName: ModWobblyLife.ModPlayerCharacterSpawnPoint
+      isMonobehaviour: 1
+    instanceMembers:
+    - memberName: overrideTransform
+      memberLink:
+        id: 0
+    - memberName: bRagdoll
+      memberLink:
+        id: 1
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
+    00000000:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 1409318879}
+        linkType: 3
+        value: {fileID: 0}
+        behaviourID: -1
+    00000001:
+      type: {class: TypeHandler_PrimitiveBoolV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 1409318879}
+        value: 0
+--- !u!114 &1409318880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409318876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1354039292, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links:
+  - linkID: 18644
+    link: {fileID: 1409318879}
+    component: {fileID: 0}
+--- !u!1 &1765512319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765512321}
+  - component: {fileID: 1765512320}
+  m_Layer: 0
+  m_Name: LinkAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1765512320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765512319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1238760105, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkNodes:
+  - gameObject: {fileID: 693830313}
+    initialEnabledState: 1
+  - gameObject: {fileID: 1046747529}
+    initialEnabledState: 1
+  gameAssetLinks: []
+--- !u!4 &1765512321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765512319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866318904
 GameObject:
