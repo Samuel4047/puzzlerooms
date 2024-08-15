@@ -28,7 +28,7 @@ TagManager:
   - Minimap
   - Road
   - OnlyRagdoll
-  - 
+  - Window
   - Audio
   - WaterCollide
   - Tunnel

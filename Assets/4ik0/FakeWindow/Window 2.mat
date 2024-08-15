@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Window 1
+  m_Name: Window 2
   m_Shader: {fileID: 4800000, guid: 3ec53b517524a934cae2b065b8330d3d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -32,13 +32,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4453c5f5f2cfb4d4e834eb09f38eb7cd, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1dca06c5969ba994d9abd74d4176928a, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0.25, y: 0.25}
     m_Floats:
     - _Glossiness: 1
     - _Metallic: 0
-    - _Scale: 0.792
+    - _Scale: 0.3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
