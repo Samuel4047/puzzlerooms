@@ -42,6 +42,13 @@ public class ModdedGameMode : ModFreemodeGamemode
         }
     }
 
+    protected override void OnSpawnedPlayerController(ModPlayerController playerController)
+    {
+        base.OnSpawnedPlayerController(playerController);
+
+        playerController.ServerSetAllowedCustomClothingAbilities(false);
+    }
+
     private IEnumerator SetPlayerProgressStart(ModPlayerCharacter playerCharacter)
     {
         var floor0 = SceneManager.GetSceneByName(floors[0]);
