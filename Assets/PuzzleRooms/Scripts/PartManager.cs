@@ -17,12 +17,6 @@ public class PartManager : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log(LightmapSettings.lightmaps + " " + LightmapSettings.lightmaps.Length);
-
-        foreach (var map in LightmapSettings.lightmaps)
-        {
-            Debug.Log(map.ToString() + map.lightmapColor.name + "; " + map.lightmapDir);
-        }
     }
 
     public void TeleportPlayerToNextFloor(ModPlayerCharacter character)
