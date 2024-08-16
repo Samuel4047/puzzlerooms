@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: d9531fa3f3de118409e943bde09e1b15, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: abbcb10c71f4be24ea8c3fc7506d370a, type: 2}
   m_LightingSettings: {fileID: 1767758824}
 --- !u!196 &4
 NavMeshSettings:
@@ -5956,7 +5956,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh58658
+  m_Name: pb_Mesh27572
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5967,8 +5967,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 4
     localAABB:
-      m_Center: {x: 8.395834, y: 5, z: -7.125}
-      m_Extent: {x: 7.8541675, y: 0, z: 7.625}
+      m_Center: {x: 8.395836, y: 4.5, z: -7.125}
+      m_Extent: {x: 7.8541684, y: 0, z: 7.625}
   m_Shapes:
     vertices: []
     shapes: []
@@ -6047,7 +6047,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 224
-    _typelessdata: a9aa0a3f0000a0400100003f00000000000080bf00000000000080bf000000006d608231000080bf0180bc410000b741dad7a33c6f17743fa9aa0a3f0000a04000006cc100000000000080bf00000000000080bf000000006d600231000080bf0180bc410000f4c00bd7a33c0bd7a33c000082410000a0400000003f00000000000080bf00000000000080bf000000006d600231000080bf4f55fbc00000b7411a467b3f6917743f010082410000a04000006cc100000000000080bf00000000000080bf0000000000000000000080bf5755fbc00000f4c015467b3fd9d7a33c
+    _typelessdata: b3aa0a3f000090400300003f00000000000080bf00000000000080bf0000000000000000000080bf0180bc410000b741dad7a33c6f17743fb3aa0a3f0000904000006cc100000000000080bf00000000000080bf0000000000000000000080bf0180bc410000f4c00bd7a33c0bd7a33c01008241000090400300003f00000000000080bf00000000000080bf0000000000000000000080bf4f55fbc00000b7411b467b3f6817743f020082410000904000006cc100000000000080bf00000000000080bf0000000000000000000080bf5755fbc00000f4c016467b3fd9d7a33c
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -6101,8 +6101,8 @@ Mesh:
       m_BitSize: 0
     m_UVInfo: 0
   m_LocalAABB:
-    m_Center: {x: 8.395834, y: 5, z: -7.125}
-    m_Extent: {x: 7.8541675, y: 0, z: 7.625}
+    m_Center: {x: 8.395836, y: 4.5, z: -7.125}
+    m_Extent: {x: 7.8541684, y: 0, z: 7.625}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -14483,10 +14483,10 @@ MonoBehaviour:
   - m_Vertices: 03000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 16.25, y: 5, z: 0.5}
-  - {x: 16.250002, y: 5, z: -14.75}
-  - {x: 0.54166657, y: 5, z: -14.75}
-  - {x: 0.54166657, y: 5, z: 0.50000006}
+  - {x: 16.250002, y: 4.5, z: 0.5000002}
+  - {x: 16.250004, y: 4.5, z: -14.75}
+  - {x: 0.54166716, y: 4.5, z: -14.75}
+  - {x: 0.54166716, y: 4.5, z: 0.5000002}
   m_Textures0:
   - {x: -7.8541636, y: 22.875}
   - {x: -7.8541675, y: -7.625}
@@ -14495,10 +14495,10 @@ MonoBehaviour:
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: -1, y: 0, z: 0.0000000018972302, w: -1}
   - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0.0000000018972302, w: -1}
-  - {x: -1, y: 0, z: 0.0000000037944603, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: -1, y: 0, z: 0, w: -1}
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88
