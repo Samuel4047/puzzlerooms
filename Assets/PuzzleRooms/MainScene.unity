@@ -293,6 +293,8 @@ MonoBehaviour:
     m_SceneName: Part2
   - m_SceneAsset: {fileID: 102900000, guid: 3e112d7227d00404697ff773714473ba, type: 3}
     m_SceneName: Part3
+  - m_SceneAsset: {fileID: 102900000, guid: 0655ea3747e1a394a8f506045badd0fa, type: 3}
+    m_SceneName: Part4
   - m_SceneAsset: {fileID: 102900000, guid: a503d05a3f4230649b6bc17689db6c62, type: 3}
     m_SceneName: Part5
   - m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}

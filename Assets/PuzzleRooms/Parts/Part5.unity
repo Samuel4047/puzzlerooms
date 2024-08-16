@@ -910,8 +910,8 @@ MonoBehaviour:
     m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}
     m_SceneName: Part6
   previousFloor:
-    m_SceneAsset: {fileID: 102900000, guid: 3e112d7227d00404697ff773714473ba, type: 3}
-    m_SceneName: Part3
+    m_SceneAsset: {fileID: 102900000, guid: 0655ea3747e1a394a8f506045badd0fa, type: 3}
+    m_SceneName: Part4
 --- !u!4 &1050556957
 Transform:
   m_ObjectHideFlags: 0
@@ -939,6 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7a79bfea0d094489c84a6d1a3086f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assetID: 
   pressurePlates:
   - {fileID: 1928494695}
   - {fileID: 1961582828}
