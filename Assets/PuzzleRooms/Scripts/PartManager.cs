@@ -38,6 +38,11 @@ public class PartManager : MonoBehaviour
         }
     }
 
+    public void SetProgress()
+    {
+
+    }
+
     public static PartManager GetPartManagerOfFloor(Scene scene)
     {
         var nextRoomObjects = scene.GetRootGameObjects();

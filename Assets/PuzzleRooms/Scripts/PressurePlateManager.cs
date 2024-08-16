@@ -22,7 +22,6 @@ public class PressurePlateManager : ModNetworkBehaviour
 
     protected override void ModStart()
     {
-        base.ModStart();
         door.SetActive(true); // Door is closed initially
     }
 

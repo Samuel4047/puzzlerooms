@@ -78,4 +78,9 @@ public class ModdedGameMode : ModFreemodeGamemode
         else
             return base.GetPlayerSpawnPoint(playerController);
     }
+
+    public void SetPlayerProgress(ModPlayerController controller, PartManager part)
+    {
+        playerProgress_Values[playerProgress_Keys.IndexOf(controller)] = part;
+    }
 }
