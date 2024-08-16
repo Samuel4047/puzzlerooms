@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
+  m_AmbientSkyColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -291,6 +291,10 @@ MonoBehaviour:
     m_SceneName: Part1
   - m_SceneAsset: {fileID: 102900000, guid: a7f6275b051619046aa2eadea422bafc, type: 3}
     m_SceneName: Part2
+  - m_SceneAsset: {fileID: 102900000, guid: 3e112d7227d00404697ff773714473ba, type: 3}
+    m_SceneName: Part3
+  - m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}
+    m_SceneName: part4
   playerProgress_Keys: []
   playerProgress_Values: []
 --- !u!4 &817287343
