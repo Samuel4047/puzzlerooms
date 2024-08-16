@@ -907,8 +907,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 297379124}
   nextFloor:
-    m_SceneAsset: {fileID: 102900000, guid: 7bda48e8eaaa843449f4bcb283a52032, type: 3}
-    m_SceneName: intro
+    m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}
+    m_SceneName: Part6
   previousFloor:
     m_SceneAsset: {fileID: 102900000, guid: 3e112d7227d00404697ff773714473ba, type: 3}
     m_SceneName: Part3

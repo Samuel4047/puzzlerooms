@@ -11,8 +11,7 @@ public class PressurePlate : MonoBehaviour
     {
         if (other.GetComponentInParent<ModPlayerCharacter>())
         {
-            // Notify the puzzle manager when the plate is stepped on
-            puzzleManager.PlatePressed(gameObject);
+            puzzleManager.ServerPlatePressed(gameObject);
         }
     }
 }

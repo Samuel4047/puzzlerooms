@@ -1,9 +1,10 @@
+using ModWobblyLife.Network;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class PressurePlateManager : MonoBehaviour
+public class PressurePlateManager : ModNetworkBehaviour
 {
     public GameObject[] pressurePlates; // Assign pressure plates in the inspector
     public GameObject door; // Assign the door object in the inspector
@@ -11,10 +12,34 @@ public class PressurePlateManager : MonoBehaviour
     private int currentStep = 0;
     private List<GameObject> pressedPlates = new List<GameObject>();
 
-    void Start()
+    private byte RPC_PLATE_PRESSED;
+
+    protected override void ModRegisterRPCs(ModNetworkObject modNetworkObject)
     {
-        // Initialize or set the door to the closed position
+        base.ModRegisterRPCs(modNetworkObject);
+        RPC_PLATE_PRESSED = modNetworkObject.RegisterRPC(ClientPlatePressed);
+    }
+
+    protected override void ModStart()
+    {
+        base.ModStart();
         door.SetActive(true); // Door is closed initially
+    }
+
+    public void ServerPlatePressed(GameObject plate)
+    {
+        if (modNetworkObject == null) return;
+
+        modNetworkObject.SendRPC(RPC_PLATE_PRESSED, ModRPCRecievers.Others, pressurePlates.ToList().IndexOf(plate));
+
+        PlatePressed(plate);
+    }
+
+    public void ClientPlatePressed(ModNetworkReader reader, ModRPCInfo info)
+    {
+        var plate = pressurePlates[reader.ReadInt32()];
+
+        PlatePressed(plate);
     }
 
     public void PlatePressed(GameObject plate)
