@@ -20,7 +20,7 @@ MonoBehaviour:
     modVersion: 1.0.0
     modDescription: 
     modAssetPath: Assets/PuzzleRooms
-    modExportPath: D:\Programms n stuff\Unity\Projects\puzzlerooms
+    modExportPath: C:/Users/zocker/Desktop/uNITY STUFF/Mod builds
     modIcon: {fileID: 0}
   logLevel: 3
   optimizeMode: 0
