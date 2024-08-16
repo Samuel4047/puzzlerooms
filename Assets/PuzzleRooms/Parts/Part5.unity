@@ -2304,11 +2304,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 297379124}
   nextFloor:
-    m_SceneAsset: {fileID: 102900000, guid: a503d05a3f4230649b6bc17689db6c62, type: 3}
-    m_SceneName: Part5
+    m_SceneAsset: {fileID: 102900000, guid: 28a00988361a9f24db312df35542e5b4, type: 3}
+    m_SceneName: Part6
   previousFloor:
-    m_SceneAsset: {fileID: 102900000, guid: 3e112d7227d00404697ff773714473ba, type: 3}
-    m_SceneName: Part3
+    m_SceneAsset: {fileID: 102900000, guid: a503d05a3f4230649b6bc17689db6c62, type: 3}
+    m_SceneName: Part4
 --- !u!4 &1050556957
 Transform:
   m_ObjectHideFlags: 0

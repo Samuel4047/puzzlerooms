@@ -5186,7 +5186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPosition: {fileID: 955478590}
   nextFloor:
-    m_SceneAsset: {fileID: 102900000, guid: 0655ea3747e1a394a8f506045badd0fa, type: 3}
+    m_SceneAsset: {fileID: 102900000, guid: a503d05a3f4230649b6bc17689db6c62, type: 3}
     m_SceneName: Part4
   previousFloor:
     m_SceneAsset: {fileID: 102900000, guid: a7f6275b051619046aa2eadea422bafc, type: 3}
