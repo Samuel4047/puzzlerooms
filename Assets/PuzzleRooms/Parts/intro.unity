@@ -18663,7 +18663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202551020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 1, z: 0.257}
+  m_LocalPosition: {x: -1, y: 0.75, z: 0.257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450652520770223}
@@ -22509,7 +22509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739282541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0.257}
+  m_LocalPosition: {x: 1, y: 0.75, z: 0.257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450652520770223}
@@ -23151,13 +23151,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917259866}
-  m_LocalRotation: {x: 0.7071071, y: -0, z: -1.7763568e-15, w: 0.7071065}
-  m_LocalPosition: {x: -0.023076922, y: 0.023076922, z: -0.007692308}
+  m_LocalRotation: {x: 0.5000011, y: 0.4999995, z: 0.49999914, w: 0.5000004}
+  m_LocalPosition: {x: -0.023083437, y: 0.023074986, z: -0.0098000085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3794649064577978871}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!114 &1917259868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24339,7 +24339,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh85806
+  m_Name: pb_Mesh124034
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24897,6 +24897,7 @@ GameObject:
   - component: {fileID: 543450652520770223}
   - component: {fileID: 919132148060139542}
   - component: {fileID: 919132148060139543}
+  - component: {fileID: 919132148060139544}
   m_Layer: 0
   m_Name: Couch_Black
   m_TagString: Untagged
@@ -24935,6 +24936,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetID: 
+--- !u!54 &919132148060139544
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148060139541}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1131694149554752822
 GameObject:
   m_ObjectHideFlags: 0
@@ -27213,6 +27230,7 @@ GameObject:
   - component: {fileID: 613008991}
   - component: {fileID: 5908223523196480687}
   - component: {fileID: 5908223523196480688}
+  - component: {fileID: 5908223523196480689}
   m_Layer: 12
   m_Name: reception_desk
   m_TagString: Untagged
@@ -27250,6 +27268,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assetID: 
+--- !u!54 &5908223523196480689
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908223523196480686}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &5924914416873543063
 GameObject:
   m_ObjectHideFlags: 0
