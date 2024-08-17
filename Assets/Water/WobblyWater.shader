@@ -14,6 +14,7 @@ Shader "WobblyLife/Custom/WobblyWater"
 		_DeepWaterColour("Deep Water Colour", Color) = (0,0.4193513,0.8490566,1)
 		_SurfaceNoiseCutoff("Surface Noise Cutoff", Range( 0 , 1)) = 0.72
 		_FoamColour("Foam Colour", Color) = (0.6650944,0.8978254,1,0)
+		_TransparencyLM("Transmissive Texture", 2D) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
 
