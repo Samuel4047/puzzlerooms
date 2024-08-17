@@ -443,7 +443,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343108
+  m_Name: pb_Mesh19856
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -617,7 +617,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343124
+  m_Name: pb_Mesh19872
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -791,7 +791,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343088
+  m_Name: pb_Mesh19836
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -955,7 +955,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343052
+  m_Name: pb_Mesh19800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1129,7 +1129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343248
+  m_Name: pb_Mesh19996
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1303,7 +1303,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343136
+  m_Name: pb_Mesh19884
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2096,6 +2096,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 849211064}
+  - component: {fileID: 849211067}
+  - component: {fileID: 849211066}
   - component: {fileID: 849211065}
   m_Layer: 0
   m_Name: Part Manager
@@ -2103,7 +2105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &849211064
 Transform:
   m_ObjectHideFlags: 0
@@ -2128,23 +2130,141 @@ MonoBehaviour:
   m_GameObject: {fileID: 849211063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6418b13b89c1eb041ac14266e928eb1e, type: 3}
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPosition: {fileID: 2057801500}
-  nextFloor:
-    m_SceneAsset: {fileID: 0}
-    m_SceneName: 
-  previousFloor:
-    m_SceneAsset: {fileID: 0}
-    m_SceneName: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "\xED\x9BW1\x9F\xF0\xDA\x01"
+      identifier: ed9b57319ff0da01
+  objectIdentifier:
+    friendlyIdentifier: "J\xCC\xB7\x7F"
+    identifier: 4accb77f00000000
+--- !u!114 &849211066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849211063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1354039292, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links:
+  - linkID: -31920
+    link: {fileID: 849211067}
+    component: {fileID: 0}
+--- !u!114 &849211067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 849211063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeReference:
+    assemblyName: umod-compiled-7b0c763f-04a1-450a-87d2-a36303c422e7, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    scriptName: PartManager
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 849211067}
+    reference:
+      assemblyName: umod-compiled-7b0c763f-04a1-450a-87d2-a36303c422e7, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      scriptName: PartManager
+      isMonobehaviour: 1
+    instanceMembers:
+    - memberName: startPosition
+      memberLink:
+        id: 0
+    - memberName: nextFloor
+      memberLink:
+        id: 1
+    - memberName: previousFloor
+      memberLink:
+        id: 2
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
+    00000000:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        linkType: 4
+        value: {fileID: 2057801498}
+        behaviourID: -31920
+    00000001:
+      type: {class: LinkInstanceV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        reference:
+          assemblyName: umod-compiled-7b0c763f-04a1-450a-87d2-a36303c422e7, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          scriptName: SceneField
+          isMonobehaviour: 0
+        instanceMembers:
+        - memberName: m_SceneAsset
+          memberLink:
+            id: 3
+        - memberName: m_SceneName
+          memberLink:
+            id: 4
+    00000002:
+      type: {class: LinkInstanceV2, ns: UMod.Shared.Linker, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        reference:
+          assemblyName: umod-compiled-7b0c763f-04a1-450a-87d2-a36303c422e7, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          scriptName: SceneField
+          isMonobehaviour: 0
+        instanceMembers:
+        - memberName: m_SceneAsset
+          memberLink:
+            id: 5
+        - memberName: m_SceneName
+          memberLink:
+            id: 6
+    00000003:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        linkType: 1
+        value: {fileID: 0}
+        behaviourID: -1
+    00000004:
+      type: {class: TypeHandler_PrimitiveStringV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        value: 
+    00000005:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        linkType: 1
+        value: {fileID: 0}
+        behaviourID: -1
+    00000006:
+      type: {class: TypeHandler_PrimitiveStringV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 849211067}
+        value: 
 --- !u!43 &894377600
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343264
+  m_Name: pb_Mesh20012
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2635,13 +2755,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966345299}
+  - component: {fileID: 966345300}
   m_Layer: 12
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &966345299
 Transform:
   m_ObjectHideFlags: 0
@@ -2671,6 +2792,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966345300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966345298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "\xED\x9BW1\x9F\xF0\xDA\x01"
+      identifier: ed9b57319ff0da01
+  objectIdentifier:
+    friendlyIdentifier: "\xFB\xB6\xFEO"
+    identifier: fbb6fe4f00000000
 --- !u!1 &1051940610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3140,8 @@ GameObject:
   - component: {fileID: 1067402766}
   - component: {fileID: 1067402765}
   - component: {fileID: 1067402764}
+  - component: {fileID: 1067402771}
+  - component: {fileID: 1067402770}
   - component: {fileID: 1067402769}
   m_Layer: 4
   m_Name: Cube (4)
@@ -3158,9 +3302,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 1067402763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 202695051, guid: 7e2bf859fdd8d704c9ff230cc7b353ee, type: 3}
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "\xED\x9BW1\x9F\xF0\xDA\x01"
+      identifier: ed9b57319ff0da01
+  objectIdentifier:
+    friendlyIdentifier: "{\xFF\xF7\x1F"
+    identifier: 7bfff71f00000000
+--- !u!114 &1067402770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067402763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1354039292, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links:
+  - linkID: -31920
+    link: {fileID: 1067402771}
+    component: {fileID: 0}
+--- !u!114 &1067402771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067402763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeReference:
+    assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    scriptName: ModWobblyLife.ModDeathBarrier
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 1067402771}
+    reference:
+      assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      scriptName: ModWobblyLife.ModDeathBarrier
+      isMonobehaviour: 1
+    instanceMembers: []
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
 --- !u!1 &1097606018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,7 +3676,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343180
+  m_Name: pb_Mesh19928
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4320,7 +4515,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343076
+  m_Name: pb_Mesh19824
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4484,7 +4679,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343206
+  m_Name: pb_Mesh19954
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5659,7 +5854,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343236
+  m_Name: pb_Mesh19984
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6147,7 +6342,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343150
+  m_Name: pb_Mesh19898
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6321,7 +6516,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343220
+  m_Name: pb_Mesh19968
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7123,7 +7318,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343192
+  m_Name: pb_Mesh19940
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7281,13 +7476,62 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1911903457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911903459}
+  - component: {fileID: 1911903458}
+  m_Layer: 0
+  m_Name: LinkAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1911903458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911903457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1238760105, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkNodes:
+  - gameObject: {fileID: 849211063}
+    initialEnabledState: 1
+  - gameObject: {fileID: 966345298}
+    initialEnabledState: 1
+  gameAssetLinks: []
+--- !u!4 &1911903459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911903457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1913505087
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh343164
+  m_Name: pb_Mesh19912
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7788,6 +8032,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057801499}
+  - component: {fileID: 2057801502}
+  - component: {fileID: 2057801501}
   - component: {fileID: 2057801500}
   m_Layer: 0
   m_Name: Start
@@ -7819,8 +8065,75 @@ MonoBehaviour:
   m_GameObject: {fileID: 2057801498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1307137437, guid: 7e2bf859fdd8d704c9ff230cc7b353ee, type: 3}
+  m_Script: {fileID: 237544033, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  overrideTransform: {fileID: 0}
-  bRagdoll: 0
+  modIdentity:
+    modName: PuzzleRooms
+    modVersion: 1.0.0
+    modIdentifier:
+      friendlyIdentifier: "\xED\x9BW1\x9F\xF0\xDA\x01"
+      identifier: ed9b57319ff0da01
+  objectIdentifier:
+    friendlyIdentifier: "\xD7\xDFS^"
+    identifier: d7df535e00000000
+--- !u!114 &2057801501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057801498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1288623270, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeReference:
+    assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+    scriptName: ModWobblyLife.ModPlayerCharacterSpawnPoint
+    isMonobehaviour: 1
+  instance:
+    behaviour: {fileID: 2057801501}
+    reference:
+      assemblyName: ModWobblyLife, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+      scriptName: ModWobblyLife.ModPlayerCharacterSpawnPoint
+      isMonobehaviour: 1
+    instanceMembers:
+    - memberName: overrideTransform
+      memberLink:
+        id: 0
+    - memberName: bRagdoll
+      memberLink:
+        id: 1
+  deserializeInstance: {fileID: 0}
+  references:
+    version: 1
+    00000000:
+      type: {class: TypeHandler_UnityObjectV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 2057801501}
+        linkType: 3
+        value: {fileID: 0}
+        behaviourID: -1
+    00000001:
+      type: {class: TypeHandler_PrimitiveBoolV2, ns: UMod.Shared.Linker.TypeHandler, asm: UMod-Shared}
+      data:
+        behaviour: {fileID: 2057801501}
+        value: 0
+--- !u!114 &2057801502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057801498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1354039292, guid: 3f09449115d51f34f92446e64c2ec898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  links:
+  - linkID: -31920
+    link: {fileID: 2057801501}
+    component: {fileID: 0}
