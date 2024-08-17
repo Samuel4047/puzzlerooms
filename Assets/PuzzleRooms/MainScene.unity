@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0bcc3c0fb2c04554fa6dd732b4ed360d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -4951,6 +4951,8 @@ MonoBehaviour:
     m_SceneName: Part5
   - m_SceneAsset: {fileID: 102900000, guid: 28a00988361a9f24db312df35542e5b4, type: 3}
     m_SceneName: Part6
+  - m_SceneAsset: {fileID: 102900000, guid: e8b50c1fe24c27b49945038314396443, type: 3}
+    m_SceneName: Part6B
   - m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}
     m_SceneName: Part7
   - m_SceneAsset: {fileID: 102900000, guid: eff2146c4758bf34e837f11c7639d3cb, type: 3}
@@ -4963,6 +4965,8 @@ MonoBehaviour:
     m_SceneName: Part11
   - m_SceneAsset: {fileID: 102900000, guid: 22c71060a10b56b4398df536cc0d88ce, type: 3}
     m_SceneName: Part12
+  - m_SceneAsset: {fileID: 102900000, guid: 96c3d64191880b24c92f7ffc78ed7911, type: 3}
+    m_SceneName: Part14
   playerProgress_Keys: []
   playerProgress_Values: []
 --- !u!4 &817287343
