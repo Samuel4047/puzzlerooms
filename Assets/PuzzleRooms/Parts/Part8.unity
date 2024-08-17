@@ -552,7 +552,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53472
+  m_Name: pb_Mesh144914
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1200,7 +1200,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53520
+  m_Name: pb_Mesh144962
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1376,7 +1376,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1088209933
 MonoBehaviour:
@@ -1528,7 +1528,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53532
+  m_Name: pb_Mesh144974
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1722,7 +1722,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21976
+  m_Name: pb_Mesh144932
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1886,7 +1886,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh53556
+  m_Name: pb_Mesh144998
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2057,7 +2057,7 @@ GameObject:
   - component: {fileID: 1363108796}
   - component: {fileID: 1363108794}
   - component: {fileID: 1363108795}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Wall 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2585,7 +2585,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1770101827
 MonoBehaviour:
@@ -7978,7 +7978,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &2091967844
 MonoBehaviour:
