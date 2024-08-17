@@ -4098,6 +4098,8 @@ MonoBehaviour:
     m_SceneName: Part6
   - m_SceneAsset: {fileID: 102900000, guid: 6b6d1089391c7144e9fd4dabfe9b327e, type: 3}
     m_SceneName: Part7
+  - m_SceneAsset: {fileID: 102900000, guid: 6065cc5d5e3f4b6428ae082a73b386c0, type: 3}
+    m_SceneName: Part9
   playerProgress_Keys: []
   playerProgress_Values: []
 --- !u!4 &817287343
