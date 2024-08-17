@@ -34,6 +34,11 @@ public class ModdedGameMode : ModFreemodeGamemode
         SceneManager.LoadScene("_Lighting", LoadSceneMode.Additive);
     }
 
+    protected override void ModStart()
+    {
+        base.ModStart();
+    }
+
     protected override void OnSpawnedPlayerCharacter(ModPlayerController playerController, ModPlayerCharacter playerCharacter)
     {
         if (!playerProgress_Keys.Contains(playerCharacter.GetPlayerController()))
