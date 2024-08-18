@@ -2355,7 +2355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: He's Tweaking
+  m_text: Cat mode
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dccd5269bb247f14fb4cc5e3bafb67ed, type: 2}
   m_sharedMaterial: {fileID: 1659523043205463965, guid: dccd5269bb247f14fb4cc5e3bafb67ed, type: 2}
