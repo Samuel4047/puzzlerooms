@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{d111797c-6420-4052-bd3d-d18b3d6c8509}">
+		<property name="assetPath">
+			<value>continuing procedure.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.8552834467120181</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b22a7ef4-8f97-4bc2-877c-872f7cdb02db}</destination>
+		</relationship>
+	</object>
+</objects>
