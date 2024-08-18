@@ -3072,6 +3072,7 @@ GameObject:
   - component: {fileID: 347640763}
   - component: {fileID: 347640762}
   - component: {fileID: 347640761}
+  - component: {fileID: 347640765}
   m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
@@ -5088,6 +5089,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 347640759}
   m_Mesh: {fileID: 1840521928}
+--- !u!114 &347640765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347640759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 793668197, guid: 7e2bf859fdd8d704c9ff230cc7b353ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &357667856
 GameObject:
   m_ObjectHideFlags: 0
@@ -5851,7 +5864,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh187104
+  m_Name: pb_Mesh370836
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7141,6 +7154,7 @@ GameObject:
   - component: {fileID: 755564378}
   - component: {fileID: 755564377}
   - component: {fileID: 755564376}
+  - component: {fileID: 755564380}
   m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
@@ -9095,6 +9109,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755564374}
   m_Mesh: {fileID: 432650915}
+--- !u!114 &755564380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755564374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 793668197, guid: 7e2bf859fdd8d704c9ff230cc7b353ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &757537773
 GameObject:
   m_ObjectHideFlags: 0
@@ -20701,7 +20727,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh150808
+  m_Name: pb_Mesh370750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
