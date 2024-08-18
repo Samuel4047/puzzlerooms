@@ -4,23 +4,19 @@ using UnityEngine.Networking;
 
 public class Webhooks : MonoBehaviour
 {
-    private string webhookUrl = "https://discord.com/api/webhooks/1274715345881665616/diQwjqmsadrWnGF59_WHRIBlnL11ilEhrtOSHUHNOByb238NVVEa1JloKmgfsgWH_j4u";
-    private string counterUrl = "https://lstwo.net/puzzlerooms/count_training_steps.php"; // URL to your PHP script
-
-    public void SendMessageToDiscord()
+    public void Send()
     {
-        StartCoroutine(UpdateCounterAndSendMessage());
+        StartCoroutine(UpdateCounter());
     }
 
-    private IEnumerator UpdateCounterAndSendMessage()
+    private IEnumerator UpdateCounter()
     {
         // Step 1: Get the current counter value from the server
-        UnityWebRequest counterRequest = UnityWebRequest.Get(counterUrl);
+        UnityWebRequest counterRequest = UnityWebRequest.Get("https://lstwo.net/puzzlerooms/count_training_steps.php");
         yield return counterRequest.SendWebRequest();
 
         if (counterRequest.result != UnityWebRequest.Result.Success)
         {
-            Debug.LogError("Error getting counter: " + counterRequest.error);
             yield break;
         }
 
@@ -35,22 +31,7 @@ public class Webhooks : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("content", message);
 
-        UnityWebRequest discordRequest = UnityWebRequest.Post(webhookUrl, form);
+        UnityWebRequest discordRequest = UnityWebRequest.Post("https://discord.com/api/webhooks/1274715345881665616/diQwjqmsadrWnGF59_WHRIBlnL11ilEhrtOSHUHNOByb238NVVEa1JloKmgfsgWH_j4u", form);
         yield return discordRequest.SendWebRequest();
-
-        if (discordRequest.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError("Error sending message to Discord: " + discordRequest.error);
-        }
-        else
-        {
-            Debug.Log("Message sent to Discord successfully with counter: " + counterValue);
-        }
-    }
-
-    // Example usage
-    void Start()
-    {
-        SendMessageToDiscord();
     }
 }
