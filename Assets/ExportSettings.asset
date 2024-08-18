@@ -13,17 +13,9 @@ MonoBehaviour:
   m_Name: ExportSettings
   m_EditorClassIdentifier: 
   activeProfile: 0
-  exportProfiles:
-  - referencePaths: []
-    modName: PuzzleRooms
-    modAuthor: 
-    modVersion: 1.0.0
-    modDescription: 
-    modAssetPath: Assets/PuzzleRooms
-    modExportPath: D:\Programms n stuff\Unity\Projects\puzzlerooms
-    modIcon: {fileID: 0}
+  exportProfiles: []
   logLevel: 3
-  optimizeMode: 1
+  optimizeMode: 0
   compressionLevel: 2
   clearConsoleOnBuild: 1
   showOutputDirectory: 1
