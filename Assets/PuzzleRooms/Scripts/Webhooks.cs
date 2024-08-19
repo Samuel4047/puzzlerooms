@@ -23,11 +23,12 @@ public class Webhooks : MonoBehaviour
         string jsonResponse = counterRequest.downloadHandler.text;
         int counterValue = int.Parse(jsonResponse.Split(':')[1].Replace("}", "").Trim());
 
-        string message = $"Training Data Collection Step: {counterValue}!\n";
+        string message = $"**Training data collection step:** {counterValue}!\n";
 
         foreach(ModPlayerController player in ModInstance.Instance.GetModPlayerControllers())
         {
-            message = message + player.GetPlayerName() + "\n";
+            if(player.modNetworkObject.IsOwner())
+                message = message + player.GetPlayerName() + "\n";
         }
 
         WWWForm form = new WWWForm();
@@ -44,11 +45,12 @@ public class Webhooks : MonoBehaviour
 
     private IEnumerator SendStart_Coroutine()
     {
-        string message = $"New Data Collection Subjects!\n";
+        string message = $"**New data collection subject!**\n";
 
         foreach (ModPlayerController player in ModInstance.Instance.GetModPlayerControllers())
         {
-            message = message + player.GetPlayerName() + "\n";
+            if(player.modNetworkObject.IsOwner())
+                message = message + player.GetPlayerName() + "\n";
         }
 
         WWWForm form = new WWWForm();
